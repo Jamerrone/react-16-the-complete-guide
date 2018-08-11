@@ -5,21 +5,22 @@ import "./App.css";
 class App extends Component {
   state = {
     persons: [
-      { name: "James", age: "25" },
-      { name: "Jessica", age: "22" },
-      { name: "Serge", age: "47" }
+      { id: "001", name: "James", age: "25" },
+      { id: "002", name: "Jessica", age: "22" },
+      { id: "003", name: "Serge", age: "47" }
     ],
     showPersons: false
   };
 
-  nameChangedHandler = event => {
-    this.setState({
-      persons: [
-        { id: "001", name: event.target.value, age: "25" },
-        { id: "002", name: "Jessica", age: "22" },
-        { id: "003", name: "Serge", age: "47" }
-      ]
-    });
+  nameChangedHandler = (event, id) => {
+    const persons = [...this.state.persons];
+    const personIndex = this.state.persons.findIndex(p => p.id === id);
+    const person = { ...this.state.persons[personIndex] };
+
+    person.name = event.target.value;
+    persons[personIndex] = person;
+
+    this.setState({ persons: persons });
   };
 
   deletePersonHandler = personIndex => {
@@ -54,6 +55,7 @@ class App extends Component {
                 age={person.age}
                 onClick={() => this.deletePersonHandler(index)}
                 key={person.id}
+                onChange={event => this.nameChangedHandler(event, person.id)}
               />
             );
           })}
@@ -65,7 +67,6 @@ class App extends Component {
       <div className="App">
         <h1>Hi, I'm a React App</h1>
         <p>This is really working!</p>
-        {/* The bind method on line 40 is the preferred method. */}
         <button style={style} onClick={this.togglePersonsHandler}>
           Toggle Persons
         </button>
