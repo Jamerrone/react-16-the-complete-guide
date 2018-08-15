@@ -5,6 +5,8 @@ import withClass from "../hoc/withClass";
 import Aux from "../hoc/Aux";
 import classes from "./App.css";
 
+export const AuthContext = React.createContext(false);
+
 class App extends PureComponent {
   constructor(props) {
     super(props);
@@ -50,7 +52,8 @@ class App extends PureComponent {
       { id: "003", name: "Serge", age: 47 }
     ],
     showPersons: false,
-    toggleClicked: 0
+    toggleClicked: 0,
+    authenticated: false
   };
 
   nameChangedHandler = (event, id) => {
@@ -80,6 +83,10 @@ class App extends PureComponent {
     });
   };
 
+  loginHandler = () => {
+    this.setState({ authenticated: true });
+  };
+
   render() {
     console.log("[App.js] Inside render()");
     let persons = null;
@@ -107,8 +114,11 @@ class App extends PureComponent {
           showPersons={this.state.showPersons}
           persons={this.state.persons}
           onClick={this.togglePersonsHandler}
+          login={this.loginHandler}
         />
-        {persons}
+        <AuthContext.Provider value={this.state.authenticated}>
+          {persons}
+        </AuthContext.Provider>
       </Aux>
     );
   }
