@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import Cockpit from "../components/Cockpit/Cockpit";
 import Persons from "../components/Persons/Persons";
-import WithClass from "../hoc/WithClass";
+import withClass from "../hoc/withClass";
 import Aux from "../hoc/Aux";
 import classes from "./App.css";
 
@@ -114,4 +114,4 @@ class App extends PureComponent {
   }
 }
 
-export default WithClass(App, classes.App);
+export default withClass(App, classes.App);
