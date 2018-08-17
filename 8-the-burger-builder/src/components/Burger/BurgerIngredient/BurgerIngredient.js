@@ -5,17 +5,17 @@ import classes from './BurgerIngredient.css';
 
 class BurgerIngredient extends Component {
   render() {
-    ingredient = null;
+    let ingredient = null;
 
     switch (this.props.type) {
       case 'bread-bottom':
-        ingredient = <div className={classes.BurgerBottom} />;
+        ingredient = <div className={classes.BreadBottom} />;
         break;
       case 'bread-top':
         ingredient = (
-          <div className={classes.BurgerTop}>
+          <div className={classes.BreadTop}>
             <div className={classes.Seeds1} />
-            <div className={classes.Seeds1} />
+            <div className={classes.Seeds2} />
           </div>
         );
         break;
