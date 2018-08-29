@@ -1,6 +1,6 @@
 # React 16 - The Complete Guide (SRP Point)
 
-This repository is not a school, work or personal project. It is a learning/playground where I will be trying to teach myself the basics of the popular JavaScript library React, version 16 and beyond. There are two main reasons why I am doing this. In a couple of weeks, I will start a six months internship. Where I will be using multiple JS libraries like Vue JS and React. The thing is, I have never used a JS library before. I did use some smaller codebases or projects from other people but never on this scale.
+This repository is not a school, work or personal project. It is a learning/playground where I will be trying to teach myself the basics of the popular JavaScript library React, version 16 and beyond. There are two main reasons why I am doing this. In a couple of weeks, I will start a six months internship. Where I will be using multiple JS libraries like Vue JS and React. The thing is, I have never used a JS library before. I did use some smaller codebases and projects from other people but never on this scale.
 
 My second reason for doing this are SRP points. SRP points are "Self-learning points" where we HvA students need to come up with projects related to our education and future carrier. Before we can complete our course and receive our diploma we need to have at least 4 SRP points. Each point is equivalent to 28 hours of self-learning.
 
@@ -41,3 +41,14 @@ Other helpful commands are: `git checkout branch-name` in order to switch to ano
 That is it... As you can see using a GUI is much faster than typing 3 different commands every single time. However, I will be using the terminal from now on, for the cool factor.
 
 ## Next Generation JavaScript
+
+Previously I mentioned that the course I choose is super complete and detailed. One of the first topics it covered were next-generation JavaScript techniques that are considered best practices in the React world. Some of them I had used before but most of them were new to me. Here is a list containing a few topics from this chapter:
+
+- Array Functions
+- Arrow Functions
+- Classes
+- Destructuring
+- Export & Import
+- Spread Operator
+
+Classes, destructuring and the spread operator were all new to me. At first, it was quite hard to understand the difference between the spread operator and destructuring, they both share the same `...` syntax. To be honest, I still don't really know with one of them I am using at certain times, I just know the syntax I need to achieve what I want.
