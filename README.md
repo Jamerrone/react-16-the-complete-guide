@@ -42,7 +42,7 @@ That is it... As you can see using a GUI is much faster than typing 3 different 
 
 ## Next Generation JavaScript
 
-Previously I mentioned that the course I choose is super complete and detailed. One of the first topics it covered were next-generation JavaScript techniques that are considered best practices in the React world. Some of them I had used before but most of them were new to me. Here is a list containing a few topics from this chapter:
+Previously I mentioned that the course I choose is super complete and detailed. One of the first topics it covered was next-generation JavaScript techniques that are considered best practices in the React world. Some of them I had used before but most of them were new to me. Here is a list containing a few topics from this chapter:
 
 - Array Functions
 - Arrow Functions
@@ -52,3 +52,31 @@ Previously I mentioned that the course I choose is super complete and detailed. 
 - Spread Operator
 
 Classes, destructuring and the spread operator were all new to me. At first, it was quite hard to understand the difference between the spread operator and destructuring, they both share the same `...` syntax. To be honest, I still don't really know with one of them I am using at certain times, I just know the syntax I need to achieve what I want.
+
+## React vs Vanilla JavaScript
+
+Both React and Vanilla JS have positive and negative points. It is in our hand to determinate which tool is the right one for the given context. From my own experience, which by all means is not a lot, I have come to enjoy writing code in both ways. While React is super powerful and readable I should never use it for smaller projects and websites. React is just too big and time-consuming to set up. Don't get me wrong, writing React components and especially reusing or updating them is super fast and easy, however, setting everything up from scratch can be very time-consuming.
+
+My biggest problem with React is the constant need to add new import statements. This gets messy and hard to understand quite fast, there is just too much of them, everywhere.
+
+By the way, this does not mean that react is a bad option for smaller projects, it justs means that I prefer to use plain Vanilla JS when writing smaller code bases or when working alone.
+
+**Why should I choose Vanilla JS?**
+
+- It is much smaller and does not depend on work from other people.
+- It will always be faster if you know what you are doing (The difference will not be that big though).
+- If a user chooses to disable JavaScript the website will still render and be somewhat useful. There are, however, ways to render React websites server-side.
+
+**Why should I choose React?**
+
+- More readable code thanks to React's structuring.
+- You can use React + Vanilla JS side-by-side without any problem.
+- The development environment given to you is very powerful and complete.
+- React's virtual DOM only rerenders the changed elements and not the entire page, resulting in much faster paint time.
+- Extremely easy to reuse elements and update them when necessaries. For example, adding new features or refactoring the code for speed gains.
+- React is very powerful but does not suffer in the performance department like older JS libraries do.
+- Much, much, much more...
+
+From my personal viewpoint, it may seem that React beats Vanilla JS by a lot, but both of them have there own place. React and Vanilla JS can both be really powerful in the right hands. For me, there is no clear winner, it all depends on the given context.
+
+## Next Steps & Conclusion
