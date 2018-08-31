@@ -79,4 +79,6 @@ By the way, this does not mean that react is a bad option for smaller projects, 
 
 From my personal viewpoint, it may seem that React beats Vanilla JS by a lot, but both of them have there own place. React and Vanilla JS can both be really powerful in the right hands. For me, there is no clear winner, it all depends on the given context.
 
-## Next Steps & Conclusion
+## Conclusion
+
+This SRP project has been an awesome introduction to the world of JavaScript libraries and of course React itself. I was really skeptical about React beforehand but I actually really enjoy it. It's easy to write and has great readability and performance. My biggest fear was the fact that React applications do not work when users have their JavaScript turned off. But being honest that 1% use case is not worth the hassle in my option. JavaScript only becomes an issue when it breaks and considering the big and taletend developers team working on it, I do not expect many issues if any at all.
