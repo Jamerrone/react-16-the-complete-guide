@@ -53,6 +53,18 @@ Previously I mentioned that the course I choose is super complete and detailed. 
 
 Classes, destructuring and the spread operator were all new to me. At first, it was quite hard to understand the difference between the spread operator and destructuring, they both share the same `...` syntax. To be honest, I still don't really know with one of them I am using at certain times, I just know the syntax I need to achieve what I want.
 
+## What is React?
+
+" React is a JavaScript library for building user interfaces. It is the view layer for web applications.
+
+At the heart of all React applications are components. A component is a self-contained module that renders some output. We can write interface elements like a button or an input field as a React component. Components are composable. A component might include one or more other components in its output.
+
+Broadly speaking, to write React apps we write React components that correspond to various interface elements. We then organize these components inside higher-level components which define the structure of our application.
+
+For example, take a form. A form might consist of many interface elements, like input fields, labels, or buttons. Each element inside the form can be written as a React component. We'd then write a higher-level component, the form component itself. The form component would specify the structure of the form and include each of these interface elements inside of it.
+
+Importantly, each component in a React app abides by strict data management principles. Complex, interactive user interfaces often involve complex data and application state. The surface area of React is limited and aimed at giving us the tools to be able to anticipate how our application will look with a given set of circumstances. " - [_Fullstackreact.com_](https://www.fullstackreact.com/30-days-of-react/day-1/)
+
 ## React vs Vanilla JavaScript
 
 Both React and Vanilla JS have positive and negative points. It is in our hand to determinate which tool is the right one for the given context. From my own experience, which by all means is not a lot, I have come to enjoy writing code in both ways. While React is super powerful and readable I should never use it for smaller projects and websites. React is just too big and time-consuming to set up. Don't get me wrong, writing React components and especially reusing or updating them is super fast and easy, however, setting everything up from scratch can be very time-consuming.
