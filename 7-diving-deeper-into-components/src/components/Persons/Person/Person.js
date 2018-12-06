@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import withClass from "../../../hoc/withClass";
+import WithClass from "../../../hoc/WithClass";
 import Aux from "../../../hoc/Aux";
 import classes from "./Person.css";
 import { AuthContext } from "../../../containers/App";
@@ -56,4 +56,4 @@ Person.propTypes = {
   onClick: PropTypes.func
 };
 
-export default withClass(Person, classes.Person);
+export default WithClass(Person, classes.Person);
